@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="E:\jQuery\css\bootstrap.min.css">
+    <script src="file:///E:/jQuery/js/bootstrap.bundle.js"></script>
+    <!--https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css!-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="  https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css ">
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js!-->
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(86, 91, 100);
+        }
+        #mean{
+            color:white;
+            font-size: 20px;
+        }
+        h1{
+            color:white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>KARBI TO ENGLISH SIMPLE DICTIONARY</h1>
+<div class="row">
+    <div class="col-md-5">
+    <div class="form-group">
+       <!---- <label for="email">Search word</label>-->
+        <input type="text" class="form-control width-200px;" id="text" placeholder="Search word"><br>
+        <button type="submit" class="btn btn-primary" onclick="search()">Search</button>
+    </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <p id="mean"> <b>Meaning:</b></p>
+    </div>
+</div>
+Developed by: John Teron
+</div>
+
+<script>
+	function search(){
+		var a=document.getElementById('text').value;
+		if(a==""){
+			document.getElementById('mean').innerHTML="Please type any word in Karbi*****";
+		}
+        else if(a=="an"){
+			document.getElementById('mean').innerHTML="food, meal/ to try, since,from";
+		}
+        else if(a=="angton"){
+			document.getElementById('mean').innerHTML="consecutively,details,serial";
+		}else if(a=="adap"){
+			document.getElementById('mean').innerHTML="Morning";
+		}else if(a=="anarlo"){
+			document.getElementById('mean').innerHTML="afternon";
+		}else if(a=="along"){
+			document.getElementById('mean').innerHTML="with";
+		}else if(a=="anung"){
+			document.getElementById('mean').innerHTML="back side";
+		}else if(a=="adapprang"){
+			document.getElementById('mean').innerHTML=" early morning,dawn";
+		}else if(a=="adarsi"){
+			document.getElementById('mean').innerHTML="the last corner;the last portion";
+		}else if(a=="adeng"){
+			document.getElementById('mean').innerHTML="in-charge,duty";
+		}else if(a=="adihu-dihu"){
+			document.getElementById('mean').innerHTML="several occasions";
+		}else if(a=="adip"){
+			document.getElementById('mean').innerHTML="a cover, cork, lid";
+		}
+		else if(a=="ado"){
+			document.getElementById('mean').innerHTML="guilt,crime";
+		}	
+        else if(a=="anke"){
+			document.getElementById('mean').innerHTML="and,then,after that";
+		}else if(a=="ansi"){
+			document.getElementById('mean').innerHTML="then,next;after that";
+		}
+        else if(a=="anso"){
+			document.getElementById('mean').innerHTML="breakfast";
+		}
+        else if(a=="anta"){
+			document.getElementById('mean').innerHTML="but,not satisfay/ as far as,untill";
+		} else if(a=="ante"){
+			document.getElementById('mean').innerHTML="and then,why";
+		} else if(a=="anu"){
+			document.getElementById('mean').innerHTML="the horn";
+		}else if(a=="ador"){
+			document.getElementById('mean').innerHTML=" the value, price";
+		}else if(a=="adu"){
+			document.getElementById('mean').innerHTML="the last,end";
+		}else if(a=="aduk"){
+			document.getElementById('mean').innerHTML="dust particles, <i>particles of any dry things</i>";
+		}else if(a=="adun"){
+			document.getElementById('mean').innerHTML="next of the first, or next to the next -(next)";
+		}else if(a=="adum"){
+			document.getElementById('mean').innerHTML="a lump,small shapeless mass,solid of any";
+		}else if(a=="adung"){
+			document.getElementById('mean').innerHTML="near,adjoining,not distance,-<i>adunghet- more closer,very closely</i>";
+		}else if(a=="adur"){
+			document.getElementById('mean').innerHTML="nature, character,behaviour <i> <b>adur kave arloso</b>-prostitute</i>";
+        }else if(a=="a'et"){
+            document.getElementById("mean").innerHTML="yolk,the yellow part of an egg";
+        } else if(a=="ahai"){
+            document.getElementById("mean").innerHTML="blessing,a gift of God,";
+        }else if(a=="ahir"){
+            document.getElementById("mean").innerHTML="greatness <i><b>Ahir kedo<li> courageous man,or jubilant</li></b></i>";
+        }else if(a=="ahok"){
+            document.getElementById("mean").innerHTML="true,certain,right,sure,not false,or not wrong";
+        }else if(a=="ahut"){
+            document.getElementById("mean").innerHTML="period,moment,time <i><b>halaso ahut</b>-on that time</i><b>-adak</b> occasionally,interval";
+        }else if(a=="aini"){
+            document.getElementById("mean").innerHTML="lethargy,drowsiness,weakness<i>-hak</i>lethargic";
+        }else if(a=="ajo"){
+            document.getElementById("mean").innerHTML="night";
+        }
+        else if(a=="ajok"){
+            document.getElementById("mean").innerHTML="cause,due to,because.";
+        }
+        else if(a=="ajoksi"){
+            document.getElementById("mean").innerHTML="that's why, because of";
+        }
+        else if(a=="aker"){
+            document.getElementById("mean").innerHTML="taboo";
+        }
+        else if(a=="akhat"){
+            document.getElementById("mean").innerHTML="station,harbour";
+        }
+        else if(a=="akleng"){
+            document.getElementById("mean").innerHTML="elder";
+        }
+        else if(a=="aklim"){
+            document.getElementById("mean").innerHTML="sapling";
+        }
+        else if(a=="aklong"){
+            document.getElementById("mean").innerHTML="base,bottom,floor";
+        }
+        else if(a=="ako"){
+            document.getElementById("mean").innerHTML="again,next";
+        }
+        else if(a=="alang"){
+            document.getElementById("mean").innerHTML="he,she or his <i>indicates for one person(singular number)</i>";
+        }
+        else if(a=="alohisarpo"){
+            document.getElementById("mean").innerHTML="chief guest";
+        }
+        else if(a=="alomso"){
+            document.getElementById("mean").innerHTML="just a while, a little moment";
+        }
+        else if(a=="angden"){
+            document.getElementById("mean").innerHTML="equal line";
+        }
+        else if(a=="angdeng"){
+            document.getElementById("mean").innerHTML="room,mansion,compartment,part;boundary";
+        }
+        else if(a=="angkok"){
+            document.getElementById("mean").innerHTML="the hole,cell cavity";
+        }
+        else if(a=="angnim"){
+            document.getElementById("mean").innerHTML="odour,smell,scent";
+        }
+        else if(a=="angru"){
+            document.getElementById("mean").innerHTML="rust";
+        }
+        else if(a=="angsong"){
+            document.getElementById("mean").innerHTML="above";
+        }
+        else if(a=="angthik"){
+            document.getElementById("mean").innerHTML=" the trusworthy,faithful";
+        }
+        else if(a=="anhelo"){
+            document.getElementById("mean").innerHTML="that's all";
+        }
+        else if(a=="apor"){
+            document.getElementById("mean").innerHTML="time<i>apor ave - no time</i>";
+        }
+        else if(a=="arbi"){
+            document.getElementById("mean").innerHTML="heap of ant";
+        }
+        else if(a=="archo"){
+            document.getElementById("mean").innerHTML=" to praise or to thank";
+        }
+        else if(a=="ardik"){
+            document.getElementById("mean").innerHTML="weight, heavy";
+        }
+        else if(a=="arjan"){
+            document.getElementById("mean").innerHTML="picture,image,photo";
+        }
+        else if(a=="arjang"){
+            document.getElementById("mean").innerHTML="light";
+        }
+        else if(a=="arjap"){
+            document.getElementById("mean").innerHTML=" to stand up";
+        }
+        else if(a=="arlen"){
+            document.getElementById("mean").innerHTML=" to aim";
+        }
+        else if(a=="arlong"){
+            document.getElementById("mean").innerHTML="stone,rock";
+        }
+        else if(a=="arloso"){
+            document.getElementById("mean").innerHTML="woman, a female person";
+        }
+        else if(a=="arlu"){
+            document.getElementById("mean").innerHTML="to climb";
+        }
+        else if(a=="arme"){
+            document.getElementById("mean").innerHTML="a tail of animal";
+        }
+        else if(a=="arnam"){
+            document.getElementById("mean").innerHTML="God,divine";
+        }
+        else if(a=="aso"){
+            document.getElementById("mean").innerHTML="the little";
+        }
+        else if(a=="asoi"){
+            document.getElementById("mean").innerHTML="chance,occasion,opportunity,means";
+        }
+        else if(a=="asonte"){
+            document.getElementById("mean").innerHTML="if;if so, in case that";
+        }
+        else if(a=="ateng"){
+            document.getElementById("mean").innerHTML="like,similar to ,according to";
+        }
+        else if(a=="atheke"){
+            document.getElementById("mean").innerHTML="because,for the reason";
+        }
+        else if(a=="athepi"){
+            document.getElementById("mean").innerHTML=" the main topic, the main theme";
+        }
+        else if(a=="ave"){
+            document.getElementById("mean").innerHTML="no,none";
+        }
+        //star B line
+        else if(a=="b"){
+            document.getElementById("mean").innerHTML=" the second letter of language.";
+        }
+        else if(a=="badu"){
+            document.getElementById("mean").innerHTML="any,any body";
+        }
+        else if(a=="badu tame"){
+            document.getElementById("mean").innerHTML="whosoever";
+        }
+        else if(a=="baha"){
+            document.getElementById("mean").innerHTML="luck,fortune";
+        }
+        else if(a=="bahak"){
+            document.getElementById("mean").innerHTML="separate,divide,share";
+        }
+        else if(a=="bahari"){
+            document.getElementById("mean").innerHTML="big,very big";
+        }
+        else if(a=="bai"){
+            document.getElementById("mean").innerHTML="to seduc,to temp,to entice";
+        }
+        else if(a=="bak"){
+            document.getElementById("mean").innerHTML="distribute";
+        }
+        else if(a=="bam"){
+            document.getElementById("mean").innerHTML="embrace";
+        }
+        else if(a=="ban"){
+            document.getElementById("mean").innerHTML="servant,slave";
+        }
+        else if(a=="bang"){
+            document.getElementById("mean").innerHTML="cover";
+        }
+        else if(a=="bangphutin"){
+            document.getElementById("mean").innerHTML="every person";
+        }
+        else if(a=="bap"){
+            document.getElementById("mean").innerHTML="grass";
+        }
+        else if(a=="bar"){
+            document.getElementById("mean").innerHTML="to start,proceed;come out or go out";
+        }
+        else if(a=="barim"){
+            document.getElementById("mean").innerHTML="old,senior";
+        }
+        else if(a=="barla"){
+            document.getElementById("mean").innerHTML="summer season";
+        }
+        else if(a=="barso"){
+            document.getElementById("mean").innerHTML="urine";
+        }
+        else if(a=="bat"){
+            document.getElementById("mean").innerHTML="ordain,to keep higher place;upright,to raise";
+        }
+        else if(a=="batai-batai"){
+            document.getElementById("mean").innerHTML="again and again";
+        }
+        else if(a=="bei"){
+            document.getElementById("mean").innerHTML="fascination,charm";
+        }
+        else if(a=="beisa"){
+            document.getElementById("mean").innerHTML="adultery,prostitute";
+        }
+        else if(a=="bek"){
+            document.getElementById("mean").innerHTML="to bet,combat,challenge";
+        }
+        else if(a=="beng"){
+            document.getElementById("mean").innerHTML="piece,a piece of any";
+        }
+        else if(a=="ber"){
+            document.getElementById("mean").innerHTML="press,to press with hands/ lower/down side;below,bottom";
+        }
+        else if(a=="bi"){
+            document.getElementById("mean").innerHTML="keep,lay down,put/ goat";
+        }
+        else if(a=="bida"){
+            document.getElementById("mean").innerHTML="education,schooling";
+        }
+        else if(a=="bihek"){
+            document.getElementById("mean").innerHTML=" a small";
+        }
+        else if(a=="bikar"){
+            document.getElementById("mean").innerHTML="poison";
+        }
+        else if(a=="binong"){
+            document.getElementById("mean").innerHTML="reality,actual";
+        }
+        else if(a=="birik"){
+            document.getElementById("mean").innerHTML="chilli";
+        }
+        else if(a=="birta"){
+            document.getElementById("mean").innerHTML="report,news.message";
+        }
+        else if(a=="bisar"){
+            document.getElementById("mean").innerHTML="judge";
+        }
+        else if(a=="boha"){
+            document.getElementById("mean").innerHTML="resting place";
+        }
+        else if(a=="boho"){
+            document.getElementById("mean").innerHTML="greedy,appetite";
+        }
+        else if(a=="bohomkuru"){
+            document.getElementById("mean").innerHTML="Sunday,the first day of the week";
+        }
+        else if(a=="bohomta"){
+            document.getElementById("mean").innerHTML="Friday";
+        }
+        else if(a=="bohomti"){
+            document.getElementById("mean").innerHTML="Saturday";
+        }
+        else if(a=="boi"){
+            document.getElementById("mean").innerHTML="strength,energy,power,trouble,poor";
+        }
+        else if(a=="boi-kejop"){
+            document.getElementById("mean").innerHTML="debility,weakness";
+        }
+        else if(a=="bok"){
+            document.getElementById("mean").innerHTML="blame";
+        }
+        else if(a=="bokbok"){
+            document.getElementById("mean").innerHTML="tomato";
+        }
+        else if(a=="bolon"){
+            document.getElementById("mean").innerHTML="charm,nice to look";
+        }
+        else if(a=="bon"){
+            document.getElementById("mean").innerHTML="may be,not sure,to be possible<i> kalangbon</i>-may be true";
+        }
+        else if(a=="bonda"){
+            document.getElementById("mean").innerHTML="composed";
+        }
+        else if(a=="bonghom"){
+            document.getElementById("mean").innerHTML="pumpkin";
+        }
+        //c part start from here
+        else if(a=="chadi"){
+            document.getElementById("mean").innerHTML="turly,same,exactly";
+        }
+        else if(a=="chainong"){
+            document.getElementById("mean").innerHTML="cow,<b>charinong alo</b> steer, an ox bull,";
+        }
+        else if(a=="chak"){
+            document.getElementById("mean").innerHTML="promise to accept,assure,covenant";
+        }
+        else if(a=="chakri"){
+            document.getElementById("mean").innerHTML="courtiers,peon";
+        }
+        else if(a=="cham"){
+            document.getElementById("mean").innerHTML=" to wash/ to clean with water/ wet";
+        }
+        else if(a==""){
+            document.getElementById("mean").innerHTML="";
+        } else if(a=="chan"){
+            document.getElementById("mean").innerHTML="increase,expand";
+        } else if(a=="chap"){
+            document.getElementById("mean").innerHTML="layer";
+        } else if(a=="char"){
+            document.getElementById("mean").innerHTML="open the eye,// far away,or distance.";
+        }else if(a=="charsam"){
+            document.getElementById("mean").innerHTML="wash hand";
+        }else if(a=="charvo"){
+            document.getElementById("mean").innerHTML="quarrel,fight,wrangle";
+        }else if(a=="chat"){
+            document.getElementById("mean").innerHTML="speedy,fast,quick";
+        }else if(a=="chatai"){
+            document.getElementById("mean").innerHTML="courtyard,outside the house";
+        }else if(a=="chechak"){
+            document.getElementById("mean").innerHTML="promese";
+        }
+        else{
+            document.getElementById("mean").innerHTML="word no foun";
+            //alert("word not found");
+		}
+    }
+	
+</script>
+</body>
+</html>
